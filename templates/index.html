@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <title>Add Contact</title>
+</head>
+<body style="margin: 30px 10px 30px 10px;">
+    <h1 style="text-align: center; margin-bottom: 30px;">Create a Contact</h1>
+    <div class="ui segment">
+        <form class="ui form" action="/add" method="POST">
+            <div class="field">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Enter a name...">
+                </div>
+                
+                <div class="fields">
+                    <div class="nine wide field">
+                        <label for="number">Number:</label>
+                        <input type="text" name="number" placeholder="+1 (XXX)-XXX-XXXX">
+                    </div>
+                    
+                    <div class="three wide field">
+                        <label for="type_of_name">Type:</label>
+                        <select name="type_of_number" id="ton">
+                            <option type="text" value="Home">Home</option>
+                            <option type="text" value="Mobile">Mobile</option>
+                            <option type="text" value="Business">Business</option>
+                            <option type="text" value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Enter an email...">
+                </div>
+    
+                <div class="field">
+                    <label for="notes">Notes:</label>
+                    <textarea type="text" name="notes" placeholder="Leave a note..."></textarea>
+                </div>
+    
+                <div class="field">
+                    <button class="ui green button" tabindex="0" type="submit">Add Contact</button>
+                    <button class="ui gray button" tabindex="0" type="reset">Clear Content</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="ui segment">
+        <a href="/contacts" class="ui blue button" tabinex="0">View Contacts</a>
+    </div>
+</body>
+</html>

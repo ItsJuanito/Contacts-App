@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <title>Contacts</title>
+</head>
+<body style="margin: 30px 10px 30px 10px;">
+    <h1 style="text-align: center;">Contacts</h1>
+    {% if contacts | length < 1 %}
+        <div>
+            <div class="ui segment" style="margin: 10px 10px 10px 10px;">
+                <h3 style="color: #a12a2a; text-align: center;">No contacts have been added yet. The contact list is curently empty!</h3>
+            </div>
+        </div>
+    {% else %}
+        <div>
+            <div style="padding: 20px 10px 20px 10px;">
+                {% for contact in contacts %}
+                <div class="ui segment">
+                    <div class="ui segment">
+                        <p class="ui big header" style="font-size:30px">{{ contact.name }}</p>
+                    </div>
+                    <div class="content">
+                        <p class="ui small header"><span class="ui big header">Phone Number: </span> {{ contact.number }}</p>
+                        <p class="ui small header"><span class="ui big header">Type: </span> {{ contact.type_of_number }}</p>
+                        <p class="ui small header"><span class="ui big header">Email: </span><a href="{{ contact.email }}">{{ contact.email }}</a></p>
+                        <p class="ui small header"><span class="ui big header">Notes: </span> {{ contact.notes }}</p>
+                        <a class="ui red button" href="/delete/{{ contact.id }}">Delete</a>
+                        <a class="ui yellow button" href="/edit/{{ contact.id }}">Edit</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    <a class="ui gray button" href="/" style="margin: 10px 10px 10px 10px;">Home</a>
+</body>
+<style>
+</style>
+</html>
