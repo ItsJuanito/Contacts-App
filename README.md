@@ -22,4 +22,4 @@ This application creates a contact list.
   - ~$ flask run
 
 
-Demo App: https://contacts-flask-app.herokuapp.com/contacts
+Demo App: https://contacts-flask-app.herokuapp.com/
