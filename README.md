@@ -2,9 +2,11 @@
 This application creates a contact list.
 # Master Folder
   - app.py: this is the main file that contains python source code. 
-  - db.sqlite: this file contains the database information and all the attributes.
+  - contacts.db: this file contains contact database information.
 # Templates Folder
-  - base.html: this file is the main file to run, contains Python formatted scripts and source code.
+  - index.html: this file is the main file to run, contains Python formatted scripts and source code.
+  - edit.html: contains the forms and user input to edit a contact.
+  - contacts.html: html page that lists all contacts in order in which they were made.
 # __Pycache__ Folder
   - cache(stores data for a future repsonse).
 # Activate venv
