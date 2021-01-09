@@ -17,7 +17,7 @@ This application creates a contact list.
 # How to Run
   - ~$ pip install Flask
   - ~$ pip install Flask-SQLAlchemy
-  - ~$ set FLASK_APP=main.py
+  - ~$ set FLASK_APP=app.py
   - ~$ set FLASK_ENV=development
   - ~$ flask run
 
