@@ -9,7 +9,7 @@ This application creates a contact list.
   - contacts.html: html page that lists all contacts in order in which they were made.
 # __Pycache__ Folder
   - cache(stores data for a future repsonse).
-# Activate venv
+# Activate Virtual Enviornment
   Before running the appilcation make sure you have the enviornment files activated.
   (How to activate venv)
   - ~$ venv\Scripts\activate (Windows)
