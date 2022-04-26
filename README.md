@@ -1,5 +1,5 @@
 # Contacts-App
-This application creates a contact list.
+This application allows users to create a contact list.
 # Master Folder
   - app.py: this is the main file that contains python source code. 
   - contacts.db: this file contains contact database information.
