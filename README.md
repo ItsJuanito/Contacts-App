@@ -22,4 +22,4 @@ This application allows users to create a contact list.
   - ~$ flask run
 
 
-Demo App: https://contacts-flask-app.herokuapp.com/
+Demo App: https://contacts-flask-app.herokuapp.com/ (not available)
